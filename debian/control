@@ -12,7 +12,7 @@ Vcs-Browser: https://github.com/cybfr/galette-plugin-map
 
 Package: galette-plugin-maps
 Architecture: all
-Depends: galette, ${misc:Depends}
+Depends: galette (>= 7.8), ${misc:Depends}
 Description: Openstreetmap plugin for galette
  Galette is a web application for French-speaking associations that
  want to manage their list of members online.
