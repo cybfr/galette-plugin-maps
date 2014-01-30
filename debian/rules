@@ -17,4 +17,8 @@ override_dh_install:
 	# Cleanup useless stuff
 	rm -rf debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps/lang/*.py
 	rm -rf debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps/*.py
+	rm -rf debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps/includes/leaflet-fullscreencontrol/LICENSE
+	rm -rf debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps/includes/leaflet-geosearch/LICENSE
+	chmod a-x  debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps/includes/leaflet-locatecontrol/images/locate_alt.png
+	
 
