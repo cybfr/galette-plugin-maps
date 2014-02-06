@@ -1,10 +1,11 @@
 Source: galette-plugin-maps
 Section: web
 Priority: optional
-Maintainer: Raphaël Hertzog <hertzog@debian.org>
+Maintainer: François-Régis Vuillemin <frv-debian@miradou.com>
+Uploaders: Raphaël Hertzog <hertzog@debian.org>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.4
-Homepage: http://galette.tuxfamily.org
+Homepage: http://galette.eu
 #Vcs-Git: git://git.debian.org/collab-maint/galette-plugin-maps.git
 Vcs-Git: git://github.com/cybfr/galette-plugin-map
 # Vcs-Browser: http://git.debian.org/?p=collab-maint/galette-plugin-maps.git;a=summary
@@ -12,7 +13,7 @@ Vcs-Browser: https://github.com/cybfr/galette-plugin-map
 
 Package: galette-plugin-maps
 Architecture: all
-Depends: galette (>= 7.8), ${misc:Depends}
+Depends: galette (>= 0.7.8), ${misc:Depends}
 Description: Openstreetmap plugin for galette
  Galette is a web application for French-speaking associations that
  want to manage their list of members online.
