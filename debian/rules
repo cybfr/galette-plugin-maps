@@ -1,24 +1,14 @@
 #!/usr/bin/make -f
-# -*- makefile -*-
-# Sample debian/rules that uses debhelper.
-# This file was originally written by Joey Hess and Craig Small.
-# As a special exception, when this file is copied by dh-make into a
-# dh-make output file, you may use that output file without restriction.
-# This special exception was added by Craig Small in version 0.37 of dh-make.
-
-# Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
-
+PLUGIN_DIR = debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps
 %:
 	dh $@ 
 
 override_dh_install:
-	dh_install
+	dh_install -XLICENSE
 	# Cleanup useless stuff
-	rm -rf debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps/lang/*.py
-	rm -rf debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps/*.py
-	rm -rf debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps/includes/leaflet-fullscreencontrol/LICENSE
-	rm -rf debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps/includes/leaflet-geosearch/LICENSE
-	chmod a-x  debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps/includes/leaflet-locatecontrol/images/locate_alt.png
+	rm -rf PLUGIN_DIR/lang/*.py
+	rm -rf PLUGIN_DIR/*.py
+	chmod a-x PLUGIN_DIR/includes/leaflet-locatecontrol/images/locate_alt.png # Bug fixed upstream
 	
 
