@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: François-Régis Vuillemin <frv-debian@miradou.com>
 Uploaders: Raphaël Hertzog <hertzog@debian.org>
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Homepage: http://galette.eu
 #Vcs-Git: git://git.debian.org/collab-maint/galette-plugin-maps.git
 Vcs-Git: git://github.com/cybfr/galette-plugin-map

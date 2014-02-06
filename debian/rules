@@ -1,5 +1,5 @@
 #!/usr/bin/make -f
-#export DH_VERBOSE=1
+# export DH_VERBOSE=1
 PLUGIN_DIR = debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin-maps
 %:
 	dh $@ 
@@ -7,8 +7,9 @@ PLUGIN_DIR = debian/galette-plugin-maps/usr/share/galette/plugins/galette-plugin
 override_dh_install:
 	dh_install -XLICENSE
 	# Cleanup useless stuff
-	rm -rf PLUGIN_DIR/lang/*.py
-	rm -rf PLUGIN_DIR/*.py
-	chmod a-x PLUGIN_DIR/includes/leaflet-locatecontrol/images/locate_alt.png # Bug fixed upstream
+	rm -rf $(PLUGIN_DIR)/lang/*.py
+	rm -rf $(PLUGIN_DIR)/*.py
+	# Bug fixed upstream
+	chmod a-x $(PLUGIN_DIR)/includes/leaflet-locatecontrol/images/locate_alt.png
 	
 
