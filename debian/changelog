@@ -1,5 +1,6 @@
-PACKAGE (VERSION) UNRELEASED; urgency=medium
+galette-plugin-maps (1.1.0-1) unstable; urgency=low
 
-  * Initial release. (Closes: #736961)
+  * Initial release  (Closes: #736961)
 
- -- François-Régis Vuillemin <frv-debian@miradou.com>  Thu, 06 Feb 2014 11:38:07 +0100
+ -- François-Régis Vuillemin <frv-debian@miradou.com>  Thu, 06 Feb 2014 11:56:13 +0100
+
